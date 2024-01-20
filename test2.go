@@ -4,30 +4,30 @@ package main
 
 func arToRim(i int) string {
 
-  var ar = map[int]string{
-    1: "I",
-    2: "II",
-    3: "III",
-    4: "IV",
-  }
+	var ar = map[int]string{
+		1: "I",
+		2: "II",
+		3: "III",
+		4: "IV",
+	}
 
-  var _ = map[string]int{
-    "I":   1,
-    "II":  2,
-    "III": 3,
-    "IV":  4,
-  }
+	var _ = map[string]int{
+		"I":   1,
+		"II":  2,
+		"III": 3,
+		"IV":  4,
+	}
 
-  str := ar[i]
+	str := ar[i]
 
-  return str
+	return str
 }
 
 func main() {
-  a := 0
-  b := 1
-  sum := a + b
-  sumR := arToRim(sum)
-  println(sumR)
+	a := 0
+	b := 1
+	sum := a + b
+	sumR := arToRim(sum)
+	println(sumR)
 
 }
